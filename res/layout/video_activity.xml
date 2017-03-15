@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/sv_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/vlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice" />
+
+    <LinearLayout
+        android:id="@+id/vll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vll_button"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <SeekBar
+            android:id="@+id/vprogressbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/vnowtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="|" />
+
+        <TextView
+            android:id="@+id/vtotaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="00:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/vprevious"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             android:layout_marginBottom="5dp"
+            android:background="@drawable/previos" />
+
+        <Button
+            android:id="@+id/vplay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/vstop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             android:layout_marginBottom="5dp"
+            android:background="@drawable/stop" />
+
+        <Button
+            android:id="@+id/vnext"
+            android:layout_width="40dp"
+             android:layout_marginBottom="5dp"
+            android:layout_height="40dp"
+            android:background="@drawable/next" />
+
+        <Button
+            android:id="@+id/vmode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             android:layout_marginBottom="5dp"
+             android:text="播停"
+            android:background="@drawable/mode"
+            />
+
+        <Button
+            android:id="@+id/vmute"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             android:layout_marginBottom="5dp"
+            android:background="@drawable/sound" />
+
+        <TextView
+            android:id="@+id/vvolume"
+            android:layout_width="50dp"
+             android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:text="10%"
+            android:textSize="20sp" />
+        <!-- <SeekBar -->
+        <!-- android:id="@+id/volumebar" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" /> -->
+    </LinearLayout>
+
+</RelativeLayout>

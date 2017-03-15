@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bar"
+        android:choiceMode="singleChoice" />
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_button"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/progressbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/nowtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="|" />
+
+        <TextView
+            android:id="@+id/totaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" 
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/previos" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/stop" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/next" />
+
+        <Button
+            android:id="@+id/mode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mode"
+            android:text="顺序" />
+
+        <Button
+            android:id="@+id/mute"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sound" />
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="10%"
+            android:textSize="20sp" />
+        <!-- <SeekBar -->
+        <!-- android:id="@+id/volumebar" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" /> -->
+    </LinearLayout>
+
+</RelativeLayout>

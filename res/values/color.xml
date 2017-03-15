@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="choice_bg_color">#6399FD</color>
+    <color name="shadow">#323232</color>
+    <color name="white">#FFFFFF</color>
+       <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_gray">#454343</color>
+    <color name="blue_check">#6399fd</color> 
+    <color name="red">#CC2B00</color>
+    <color name="bottom_check">#50ADFD</color>
+    <color name="yellow">#F69820</color>
+    <color name="gray">#eeeeee</color>
+    <color name="title_bg">#EEF0F3</color>
+	<color name="text_blue">#96c8fa</color>
+	<color name="text_title_blue">#6EA0DF</color>
+	<color name="lightbackground">#EFEFEF</color>
+    <color name="listviewdiver">#f7f8fa</color>
+     <color name="bottom_line">#50000000</color>
+     <color name="list_blue_focuse">#9acaf3</color>
+</resources>
